@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LBC+qW/m6dhOclvlDRKe3IKKPDKY0qYdxaYOfmSuiukvjql7SOb/hptn6n/VbpoFdJtO01v4uphycd2CcdOhnw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Stitch\\PletkaRedka\\Web\\PletkaRedka.Web.Infrastructure\\PletkaRedka.Web.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.205\\stylecop.analyzers.1.2.0-beta.205.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.205\\stylecop.analyzers.unstable.1.2.0.205.nupkg.sha512"
+  ],
+  "logs": []
+}

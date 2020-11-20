@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qrAuEaWvUPgwu6D3Yy6QdmmGTjZAX+x+Od13mFqhYuSnw1ELKKVzLwfo2suGsnrxgg7ibd1B+X2Ghf+QUJe78A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\Stitch\\PletkaRedka\\Data\\PletkaRedka.Data.Common\\PletkaRedka.Data.Common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.205\\stylecop.analyzers.1.2.0-beta.205.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.205\\stylecop.analyzers.unstable.1.2.0.205.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

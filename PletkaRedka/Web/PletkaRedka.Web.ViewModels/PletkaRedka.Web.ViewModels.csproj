@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\PletkaRedka.Data.Models\PletkaRedka.Data.Models.csproj" />
     <ProjectReference Include="..\..\Services\PletkaRedka.Services.Mapping\PletkaRedka.Services.Mapping.csproj" />
+    <ProjectReference Include="..\PletkaRedka.Web.Infrastructure\PletkaRedka.Web.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

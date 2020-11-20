@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\bin\Debug\netstandard2.1\PletkaRedka.Services.Mapping.deps.json
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\bin\Debug\netstandard2.1\PletkaRedka.Services.Mapping.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\bin\Debug\netstandard2.1\PletkaRedka.Services.Mapping.pdb
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\obj\Debug\netstandard2.1\PletkaRedka.Services.Mapping.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\obj\Debug\netstandard2.1\PletkaRedka.Services.Mapping.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\obj\Debug\netstandard2.1\PletkaRedka.Services.Mapping.AssemblyInfo.cs
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\obj\Debug\netstandard2.1\PletkaRedka.Services.Mapping.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\obj\Debug\netstandard2.1\PletkaRedka.Services.Mapping.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Mapping\obj\Debug\netstandard2.1\PletkaRedka.Services.Mapping.pdb

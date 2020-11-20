@@ -1,0 +1,8 @@
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\bin\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.deps.json
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\bin\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\bin\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.pdb
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.AssemblyInfo.cs
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.pdb

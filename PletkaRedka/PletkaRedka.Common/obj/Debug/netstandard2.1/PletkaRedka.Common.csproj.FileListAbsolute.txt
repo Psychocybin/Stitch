@@ -1,0 +1,9 @@
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\bin\Debug\netstandard2.1\PletkaRedka.Common.deps.json
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\bin\Debug\netstandard2.1\PletkaRedka.Common.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\bin\Debug\netstandard2.1\PletkaRedka.Common.pdb
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\obj\Debug\netstandard2.1\PletkaRedka.Common.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\obj\Debug\netstandard2.1\PletkaRedka.Common.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\obj\Debug\netstandard2.1\PletkaRedka.Common.AssemblyInfo.cs
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\obj\Debug\netstandard2.1\PletkaRedka.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\obj\Debug\netstandard2.1\PletkaRedka.Common.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\PletkaRedka.Common\obj\Debug\netstandard2.1\PletkaRedka.Common.pdb

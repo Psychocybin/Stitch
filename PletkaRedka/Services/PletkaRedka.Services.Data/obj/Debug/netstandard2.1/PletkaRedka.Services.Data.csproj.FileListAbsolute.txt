@@ -1,0 +1,16 @@
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Services.Data.deps.json
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Services.Data.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Services.Data.pdb
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Data.Common.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Data.Models.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Services.Mapping.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Data.Common.pdb
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Data.Models.pdb
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\bin\Debug\netstandard2.1\PletkaRedka.Services.Mapping.pdb
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\obj\Debug\netstandard2.1\PletkaRedka.Services.Data.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\obj\Debug\netstandard2.1\PletkaRedka.Services.Data.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\obj\Debug\netstandard2.1\PletkaRedka.Services.Data.AssemblyInfo.cs
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\obj\Debug\netstandard2.1\PletkaRedka.Services.Data.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\obj\Debug\netstandard2.1\PletkaRedka.Services.Data.csproj.CopyComplete
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\obj\Debug\netstandard2.1\PletkaRedka.Services.Data.dll
+C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services.Data\obj\Debug\netstandard2.1\PletkaRedka.Services.Data.pdb
