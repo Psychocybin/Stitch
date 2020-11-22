@@ -1,16 +1,32 @@
 ﻿namespace PletkaRedka.Web.Controllers
 {
     using System.Diagnostics;
-
-    using PletkaRedka.Web.ViewModels;
+    using System.Linq;
 
     using Microsoft.AspNetCore.Mvc;
+    using PletkaRedka.Data.Common.Repositories;
+    using PletkaRedka.Data.Models;
+    using PletkaRedka.Services.Data;
+    using PletkaRedka.Services.Mapping;
+    using PletkaRedka.Web.ViewModels;
+    using PletkaRedka.Web.ViewModels.Home;
 
     public class HomeController : BaseController
     {
+        private readonly ICategoriesService categoriesService;
+
+        public HomeController(ICategoriesService categoriesService)
+        {
+            this.categoriesService = categoriesService;
+        }
+
         public IActionResult Index()
         {
-            return this.View();
+            var viewModel = new IndexViewModel();
+            var categories = this.categoriesService.GetAll<IndexCategoryViewModel>();
+            viewModel.Categories = categories;
+
+            return this.View(viewModel);
         }
 
         public IActionResult Privacy()

@@ -1,10 +1,20 @@
 ﻿@using PletkaRedka.Common
+@model PletkaRedka.Web.ViewModels.Home.IndexViewModel
 @{
     this.ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome to @GlobalConstants.SystemName!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container align-center">
+    <div class="row">
+        @foreach (var item in Model.Categories)
+        {
+            <div class="media m-sm-1 col-sm-3">
+                <img src="@item.ImageUrl" width="100" class="mr-2" alt="@item.Name">
+                <div class="media-body">
+                    <h5 class="mt-0"><a href="@item.Url">@item.Name</a></h5>
+                    @item.Description
+                </div>
+            </div>
+        }
+    </div>
 </div>
-<h2>ЗДРАСТИ, НЕВИ!</h2>
