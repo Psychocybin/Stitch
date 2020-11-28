@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace PletkaRedka.Data.Migrations
 {
-    public partial class InitialReCreate : Migration
+    public partial class InitialModelsCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -225,7 +225,7 @@ namespace PletkaRedka.Data.Migrations
                     ModifiedOn = table.Column<DateTime>(nullable: true),
                     IsDeleted = table.Column<bool>(nullable: false),
                     DeletedOn = table.Column<DateTime>(nullable: true),
-                    Title = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: true),
                     Content = table.Column<string>(nullable: true),
                     UserId = table.Column<string>(nullable: true),
                     CategoryId = table.Column<int>(nullable: false)

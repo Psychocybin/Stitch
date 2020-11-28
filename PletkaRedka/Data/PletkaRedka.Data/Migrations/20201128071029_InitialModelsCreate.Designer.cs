@@ -10,8 +10,8 @@ using PletkaRedka.Data;
 namespace PletkaRedka.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201122071926_InitialReCreate")]
-    partial class InitialReCreate
+    [Migration("20201128071029_InitialModelsCreate")]
+    partial class InitialModelsCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -376,7 +376,7 @@ namespace PletkaRedka.Data.Migrations
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Title")
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("UserId")
