@@ -7,6 +7,8 @@
 
     public class PostInCategoryViewModel : IMapFrom<Post>
     {
+        public int Id { get; set; }
+
         public DateTime CreatedOn { get; set; }
 
         public string Name { get; set; }

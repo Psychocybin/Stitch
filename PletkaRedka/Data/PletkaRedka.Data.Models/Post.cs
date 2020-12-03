@@ -1,6 +1,7 @@
 ﻿namespace PletkaRedka.Data.Models
 {
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
 
     using PletkaRedka.Data.Common.Models;
 
@@ -15,6 +16,7 @@
 
         public string Content { get; set; }
 
+        [Required]
         public string UserId { get; set; }
 
         public virtual ApplicationUser User { get; set; }

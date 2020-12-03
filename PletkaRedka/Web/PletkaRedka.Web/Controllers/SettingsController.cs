@@ -3,12 +3,11 @@
     using System;
     using System.Threading.Tasks;
 
+    using Microsoft.AspNetCore.Mvc;
     using PletkaRedka.Data.Common.Repositories;
     using PletkaRedka.Data.Models;
     using PletkaRedka.Services.Data;
     using PletkaRedka.Web.ViewModels.Settings;
-
-    using Microsoft.AspNetCore.Mvc;
 
     public class SettingsController : BaseController
     {

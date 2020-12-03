@@ -1,9 +1,11 @@
 ﻿namespace PletkaRedka.Services.Data
 {
+    using System.Linq;
     using System.Threading.Tasks;
 
     using PletkaRedka.Data.Common.Repositories;
     using PletkaRedka.Data.Models;
+    using PletkaRedka.Services.Mapping;
 
     public class PostsService : IPostsService
     {
@@ -27,6 +29,13 @@
             await this.postsRepository.AddAsync(post);
             await this.postsRepository.SaveChangesAsync();
             return post.Id;
+        }
+
+        public T GetById<T>(int id)
+        {
+            var post = this.postsRepository.All().Where(x => x.Id == id)
+                .To<T>().FirstOrDefault();
+            return post;
         }
     }
 }
