@@ -1,8 +1,12 @@
 ﻿@using PletkaRedka.Common
 @model PletkaRedka.Web.ViewModels.Home.IndexViewModel
 @{
-    this.ViewData["Title"] = "Home Page";
+    this.ViewData["Title"] = "Начална страница";
 }
+
+<div class="mb-xl-4">
+    <a asp-controller="Posts" asp-action="Create" class="btn btn-block border-info">СЪЗДАЙ НОВА ТЕМА</a>
+</div>
 
 <div class="container align-center">
     <div class="row">

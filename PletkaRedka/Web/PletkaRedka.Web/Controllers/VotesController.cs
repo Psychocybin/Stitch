@@ -10,7 +10,9 @@
     using PletkaRedka.Services.Data;
     using PletkaRedka.Web.ViewModels.Votes;
 
-    public class VotesController : BaseController
+    [ApiController]
+    [Route("api/[controller]")]
+    public class VotesController : ControllerBase
     {
         private readonly IVotesService votesService;
         private readonly UserManager<ApplicationUser> userManager;
