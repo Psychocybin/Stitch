@@ -1,0 +1,20 @@
+﻿@model PletkaRedka.Web.ViewModels.Comments.CommentViewModel
+@{
+    this.ViewData["Title"] = "Добави коментар";
+}
+
+<div class="col-9">
+    <form asp-controller="Comments" asp-action="Create" method="post">
+        <input type="hidden" name="PostId" value="@this.Model.PostId" />
+        <div class="media-body col-9 mb-2">
+            <div class="mb-3">
+                <label for="Content">Съдържание</label>
+                <textarea name="Content" class="form-control border-info" rows="6"></textarea>
+                <span validation-for="Content" class="text-danger">Полето е задължително!</span>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-info" />
+            </div>
+        </div>
+    </form>
+</div>

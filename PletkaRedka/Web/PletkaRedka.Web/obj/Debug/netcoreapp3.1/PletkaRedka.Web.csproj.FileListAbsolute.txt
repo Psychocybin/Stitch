@@ -459,3 +459,4 @@ C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreap
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreapp3.1\Razor\Views\Categories\ByName.cshtml.g.cs
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreapp3.1\Razor\Views\Posts\Create.cshtml.g.cs
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreapp3.1\Razor\Views\Posts\ById.cshtml.g.cs
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreapp3.1\Razor\Views\Comments\Input.cshtml.g.cs

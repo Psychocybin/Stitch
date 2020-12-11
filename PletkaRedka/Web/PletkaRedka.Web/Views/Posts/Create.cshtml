@@ -10,17 +10,17 @@
 <form asp-action="Create" method="post">
     <div class="media-body col-9 mb-2">
         <label asp-for="Name">Заглавие</label>
-        <input asp-for="Name" class="form-control" />
+        <input asp-for="Name" class="form-control border-info" />
         <span asp-validation-for="Name" class="text-danger">Полето "Заглавие" е задължително!</span>
     </div>
     <div class="media-body col-9 mb-2">
         <label asp-for="Content">Съдържание</label>
-        <textarea asp-for="Content" class="form-control"></textarea>
+        <textarea asp-for="Content" class="form-control border-info" rows="6"></textarea>
         <span asp-validation-for="Content" class="text-danger">Полето "Съдържание" е задължително!</span>
     </div>
     <div class="media-body col-9 mb-2">
         <label asp-for="CategoryId"></label>
-        <select asp-for="CategoryId" asp-items="Model.Categories.Select(x => new SelectListItem(x.Name, x.Id.ToString()))" class="form-control"></select>
+        <select asp-for="CategoryId" asp-items="Model.Categories.Select(x => new SelectListItem(x.Name, x.Id.ToString()))" class="form-control border-info"></select>
         <span asp-validation-for="CategoryId" class="text-danger">Полето "Категория" е задължително!</span>
     </div>
     <br />

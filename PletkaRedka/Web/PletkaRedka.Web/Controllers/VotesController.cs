@@ -1,6 +1,5 @@
 ﻿namespace PletkaRedka.Web.Controllers
 {
-    using System.Text.Json;
     using System.Threading.Tasks;
 
     using Microsoft.AspNetCore.Authorization;
@@ -29,8 +28,8 @@
         [HttpPost]
         public async Task<ActionResult<VoteResponseModel>> Post(VoteInputModel input)
         {
-            var user = await this.userManager.GetUserAsync(this.User);
-            await this.votesService.VoteAsync(input.PostId, user.Id, input.IsUpVote);
+            var userId = this.userManager.GetUserId(this.User);
+            await this.votesService.VoteAsync(input.PostId, userId, input.IsUpVote);
             var votes = this.votesService.GetVotes(input.PostId);
             return new VoteResponseModel { VotesCount = votes };
         }
