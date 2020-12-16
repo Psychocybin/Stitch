@@ -2,8 +2,10 @@
 {
     using System.Threading.Tasks;
 
+    using PletkaRedka.Data.Models;
+
     public interface IGaleriesService
     {
-        Task CreatePicture();
+        Task<Gallery> AddPictureAsync(string description, string imageUrl, string userId, ApplicationUser user);
     }
 }

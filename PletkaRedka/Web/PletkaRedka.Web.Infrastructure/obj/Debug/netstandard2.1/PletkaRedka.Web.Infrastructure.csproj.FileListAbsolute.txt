@@ -6,3 +6,4 @@ C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.dll
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.pdb
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web.Infrastructure\obj\Debug\netstandard2.1\PletkaRedka.Web.Infrastructure.csprojAssemblyReference.cache

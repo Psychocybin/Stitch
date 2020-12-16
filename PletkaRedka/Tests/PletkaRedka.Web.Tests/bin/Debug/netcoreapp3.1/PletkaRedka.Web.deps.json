@@ -2601,7 +2601,8 @@
       "PletkaRedka.Web.ViewModels/1.0.0": {
         "dependencies": {
           "PletkaRedka.Data.Models": "1.0.0",
-          "PletkaRedka.Services.Mapping": "1.0.0"
+          "PletkaRedka.Services.Mapping": "1.0.0",
+          "PletkaRedka.Web.Infrastructure": "1.0.0"
         },
         "runtime": {
           "PletkaRedka.Web.ViewModels.dll": {}

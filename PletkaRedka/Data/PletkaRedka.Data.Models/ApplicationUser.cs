@@ -16,6 +16,7 @@ namespace PletkaRedka.Data.Models
             this.Claims = new HashSet<IdentityUserClaim<string>>();
             this.Logins = new HashSet<IdentityUserLogin<string>>();
             this.Posts = new HashSet<Post>();
+            this.Galleries = new HashSet<Gallery>();
         }
 
         // Audit info
@@ -35,5 +36,7 @@ namespace PletkaRedka.Data.Models
         public virtual ICollection<IdentityUserLogin<string>> Logins { get; set; }
 
         public virtual ICollection<Post> Posts { get; set; }
+
+        public virtual ICollection<Gallery> Galleries { get; set; }
     }
 }

@@ -1,14 +1,14 @@
 ﻿namespace PletkaRedka.Web.Controllers
 {
-    using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
 
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using PletkaRedka.Data.Models;
     using PletkaRedka.Services.Data;
+    using PletkaRedka.Web.ViewModels.Galleries;
 
     public class GalleriesController : BaseController
     {
@@ -23,7 +23,39 @@
 
         public IActionResult ShowGalleries()
         {
-            return View();
+            return this.View("Gallery");
+        }
+
+        [Authorize]
+        public IActionResult AddPictureForm()
+        {
+            return this.View("AddPictureForm");
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> AddPicture(AddPictureViewModel input)
+        {
+            var user = await this.userManager.GetUserAsync(this.User);
+
+            var picture = new Gallery()
+            {
+                Description = input.Description,
+                ImageUrl = input.ImageUrl,
+                UserId = user.Id,
+            };
+
+            picture = await this.galeriesService.AddPictureAsync(picture.Description, picture.ImageUrl, picture.UserId, user);
+            user.Galleries.Add(picture);
+
+            return this.RedirectToAction("ShowGalleries", "Galleries");
+        }
+
+        public IActionResult ShowAllPictures()
+        {
+            var viewModel = new GetAllPicturesViewModel();
+
+            return this.View(viewModel);
         }
     }
 }

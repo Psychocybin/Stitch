@@ -330,7 +330,7 @@ namespace PletkaRedka.Data.Migrations
                     b.Property<DateTime?>("DeletedOn")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Discription")
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
@@ -342,9 +342,14 @@ namespace PletkaRedka.Data.Migrations
                     b.Property<DateTime?>("ModifiedOn")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("IsDeleted");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Galleries");
                 });
@@ -520,6 +525,13 @@ namespace PletkaRedka.Data.Migrations
                         .HasForeignKey("UserId");
                 });
 
+            modelBuilder.Entity("PletkaRedka.Data.Models.Gallery", b =>
+                {
+                    b.HasOne("PletkaRedka.Data.Models.ApplicationUser", "User")
+                        .WithMany("Galleries")
+                        .HasForeignKey("UserId");
+                });
+
             modelBuilder.Entity("PletkaRedka.Data.Models.Post", b =>
                 {
                     b.HasOne("PletkaRedka.Data.Models.Category", "Category")
@@ -538,7 +550,7 @@ namespace PletkaRedka.Data.Migrations
             modelBuilder.Entity("PletkaRedka.Data.Models.Vote", b =>
                 {
                     b.HasOne("PletkaRedka.Data.Models.Post", "Post")
-                        .WithMany()
+                        .WithMany("Votes")
                         .HasForeignKey("PostId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();

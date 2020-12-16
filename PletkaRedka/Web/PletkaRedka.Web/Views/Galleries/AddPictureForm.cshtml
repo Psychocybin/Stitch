@@ -1,0 +1,23 @@
+﻿@{
+    this.ViewData["Title"] = "Добави снимка";
+}
+
+<div class="col-9">
+    <form asp-controller="Galleries" asp-action="AddPicture" method="post">
+        <div class="media-body col-9 mb-2">
+            <div class="mb-3">
+                <label for="ImageUrl">Добавете линк към снимка</label>
+                <input name="ImageUrl" class="form-control border-info" rows="6">
+                <span validation-for="ImageUrl" class="text-danger">Полето е задължително!</span>
+            </div>
+            <div class="mb-3">
+                <label for="Description">Добавете описание към снимката</label>
+                <textarea name="Description" class="form-control border-info" rows="6"></textarea>
+                <span validation-for="Description" class="text-danger">Полето е задължително!</span>
+            </div>
+            <div>
+                <input type="submit" class="btn btn-info" />
+            </div>
+        </div>
+    </form>
+</div>

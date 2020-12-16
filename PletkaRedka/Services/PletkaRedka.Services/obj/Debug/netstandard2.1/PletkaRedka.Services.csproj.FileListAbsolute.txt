@@ -1,7 +1,6 @@
 C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services\bin\Debug\netstandard2.1\PletkaRedka.Services.deps.json
 C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services\bin\Debug\netstandard2.1\PletkaRedka.Services.dll
 C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services\bin\Debug\netstandard2.1\PletkaRedka.Services.pdb
-C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services\obj\Debug\netstandard2.1\PletkaRedka.Services.csprojAssemblyReference.cache
 C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services\obj\Debug\netstandard2.1\PletkaRedka.Services.AssemblyInfoInputs.cache
 C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services\obj\Debug\netstandard2.1\PletkaRedka.Services.AssemblyInfo.cs
 C:\Users\user\Desktop\Stitch\PletkaRedka\Services\PletkaRedka.Services\obj\Debug\netstandard2.1\PletkaRedka.Services.csproj.CoreCompileInputs.cache

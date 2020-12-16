@@ -8,6 +8,10 @@
     <a asp-controller="Posts" asp-action="Create" class="btn btn-block border-info">СЪЗДАЙ НОВА ТЕМА</a>
 </div>
 
+<div class="mb-xl-4">
+    <a asp-controller="Galleries" asp-action="ShowGalleries" class="btn btn-block border-info">Галерия</a>
+</div>
+
 <div class="container align-center">
     <div class="row">
         @foreach (var item in Model.Categories)
