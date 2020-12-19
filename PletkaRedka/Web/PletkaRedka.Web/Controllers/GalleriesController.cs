@@ -53,8 +53,10 @@
 
         public IActionResult ShowAllPictures()
         {
-            var viewModel = new GetAllPicturesViewModel();
-
+            var viewModel = new ShowPicturesViewModel()
+            {
+                Galleries = this.galeriesService.GetAllPictures<GetAllPicturesViewModel>(),
+            };
             return this.View(viewModel);
         }
     }

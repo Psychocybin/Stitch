@@ -7,6 +7,8 @@
 
     using PletkaRedka.Data.Common.Repositories;
     using PletkaRedka.Data.Models;
+    using System.Linq;
+    using PletkaRedka.Services.Mapping;
 
     public class GaleriesService : IGaleriesService
     {
@@ -33,5 +35,10 @@
             return picture;
         }
 
+        public IEnumerable<T> GetAllPictures<T>()
+        {
+            IQueryable<Gallery> query = this.repository.All().OrderByDescending(x => x.Id);
+            return query.To<T>().ToList();
+        }
     }
 }

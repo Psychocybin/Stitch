@@ -1,15 +1,15 @@
-﻿@model PletkaRedka.Web.ViewModels.Galleries.GetAllPicturesViewModel
+﻿@model PletkaRedka.Web.ViewModels.Galleries.ShowPicturesViewModel
 @{
     this.ViewData["Title"] = "Снимки";
 }
 
 bingo
 
-
-@*@foreach (var picture in Model.Galleries)
+@foreach (var picture in Model.Galleries)
 {
-    <div>@picture.GalleriesDescription</div>
-    <div>@picture.GalleriesImageUrl</div>
-    <div>@picture.GalleriesCreatedOn</div>
-}*@
+    <div>@picture.CreatedOn</div>
+    
+
+
+}
 

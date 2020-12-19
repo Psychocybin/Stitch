@@ -1,9 +1,10 @@
 ﻿namespace PletkaRedka.Web.Controllers
 {
+    using System;
+
     using Microsoft.AspNetCore.Mvc;
     using PletkaRedka.Services.Data;
     using PletkaRedka.Web.ViewModels.Categories;
-    using System;
 
     public class CategoriesController : Controller
     {

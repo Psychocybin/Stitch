@@ -1,20 +1,13 @@
 ﻿namespace PletkaRedka.Web.ViewModels.Galleries
 {
     using System;
-
+    using System.Collections.Generic;
+    using System.Linq;
     using PletkaRedka.Data.Models;
     using PletkaRedka.Services.Mapping;
 
-    public class ShowPicturesViewModel : IMapFrom<ApplicationUser>
+    public class ShowPicturesViewModel
     {
-        public string GalleriesUserId { get; set; }
-
-        public string GalleriesUserName { get; set; }
-
-        public DateTime GalleriesCreatedOn { get; set; }
-
-        public string GalleriesDescription { get; set; }
-
-        public string GalleriesImageUrl { get; set; }
+        public IEnumerable<GetAllPicturesViewModel> Galleries { get; set; }
     }
 }
