@@ -10,8 +10,8 @@ using PletkaRedka.Data;
 namespace PletkaRedka.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20201211220442_ChangeGalleryModel")]
-    partial class ChangeGalleryModel
+    [Migration("20201225131545_AddInitialMigrations")]
+    partial class AddInitialMigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

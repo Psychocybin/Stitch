@@ -1,29 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using PletkaRedka.Data;
-using PletkaRedka.Data.Models;
-
-namespace PletkaRedka.Web.Areas.Administration.Controllers
+﻿namespace PletkaRedka.Web.Areas.Administration.Controllers
 {
-    [Area("Administration")]
-    public class CategoriesController : Controller
-    {
-        private readonly ApplicationDbContext _context;
+    using System.Linq;
+    using System.Threading.Tasks;
 
-        public CategoriesController(ApplicationDbContext context)
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.EntityFrameworkCore;
+    using PletkaRedka.Data.Common.Repositories;
+    using PletkaRedka.Data.Models;
+
+    public class CategoriesController : AdministrationController
+    {
+        private readonly IDeletableEntityRepository<Category> repository;
+
+        public CategoriesController(IDeletableEntityRepository<Category> repository)
         {
-            _context = context;
+            this.repository = repository;
         }
 
         // GET: Administration/Categories
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Categories.ToListAsync());
+            return this.View(await this.repository.All().ToListAsync());
         }
 
         // GET: Administration/Categories/Details/5
@@ -31,27 +28,27 @@ namespace PletkaRedka.Web.Areas.Administration.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            var category = await _context.Categories
+            var category = await this.repository.All()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (category == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            return View(category);
+            return this.View(category);
         }
 
         // GET: Administration/Categories/Create
         public IActionResult Create()
         {
-            return View();
+            return this.View();
         }
 
         // POST: Administration/Categories/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -59,8 +56,8 @@ namespace PletkaRedka.Web.Areas.Administration.Controllers
         {
             if (this.ModelState.IsValid)
             {
-                this._context.Add(category);
-                await this._context.SaveChangesAsync();
+                await this.repository.AddAsync(category);
+                await this.repository.SaveChangesAsync();
                 return this.RedirectToAction(nameof(this.Index));
             }
 
@@ -72,19 +69,20 @@ namespace PletkaRedka.Web.Areas.Administration.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            var category = await _context.Categories.FindAsync(id);
+            var category = this.repository.All().FirstOrDefault(x => x.Id == id);
             if (category == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
-            return View(category);
+
+            return this.View(category);
         }
 
         // POST: Administration/Categories/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
+        // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -92,30 +90,32 @@ namespace PletkaRedka.Web.Areas.Administration.Controllers
         {
             if (id != category.Id)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            if (ModelState.IsValid)
+            if (this.ModelState.IsValid)
             {
                 try
                 {
-                    _context.Update(category);
-                    await _context.SaveChangesAsync();
+                    this.repository.Update(category);
+                    await this.repository.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!CategoryExists(category.Id))
+                    if (!this.CategoryExists(category.Id))
                     {
-                        return NotFound();
+                        return this.NotFound();
                     }
                     else
                     {
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+
+                return this.RedirectToAction(nameof(this.Index));
             }
-            return View(category);
+
+            return this.View(category);
         }
 
         // GET: Administration/Categories/Delete/5
@@ -123,33 +123,34 @@ namespace PletkaRedka.Web.Areas.Administration.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            var category = await _context.Categories
+            var category = await this.repository.All()
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (category == null)
             {
-                return NotFound();
+                return this.NotFound();
             }
 
-            return View(category);
+            return this.View(category);
         }
 
         // POST: Administration/Categories/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
+        [ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var category = await _context.Categories.FindAsync(id);
-            _context.Categories.Remove(category);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            var category = this.repository.All().FirstOrDefault(x => x.Id == id);
+            this.repository.Delete(category);
+            await this.repository.SaveChangesAsync();
+            return this.RedirectToAction(nameof(this.Index));
         }
 
         private bool CategoryExists(int id)
         {
-            return _context.Categories.Any(e => e.Id == id);
+            return this.repository.All().Any(e => e.Id == id);
         }
     }
 }
