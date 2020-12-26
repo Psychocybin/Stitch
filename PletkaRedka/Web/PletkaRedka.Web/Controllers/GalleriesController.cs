@@ -38,14 +38,7 @@
         {
             var user = await this.userManager.GetUserAsync(this.User);
 
-            var picture = new Gallery()
-            {
-                Description = input.Description,
-                ImageUrl = input.ImageUrl,
-                UserId = user.Id,
-            };
-
-            picture = await this.galeriesService.AddPictureAsync(picture.Description, picture.ImageUrl, picture.UserId, user);
+            var picture = await this.galeriesService.AddPictureAsync(input.Description, input.ImageUrl, input.UserId, user);
             user.Galleries.Add(picture);
 
             return this.RedirectToAction("ShowGalleries", "Galleries");

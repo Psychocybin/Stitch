@@ -3,13 +3,16 @@
     this.ViewData["Title"] = "Снимки";
 }
 
-bingo
-
-@foreach (var picture in Model.Galleries)
-{
-    <div>@picture.CreatedOn</div>
-    
-
-
-}
-
+<div class="container align-center">
+    <div class="row">
+        @foreach (var picture in Model.Galleries)
+        {
+            <div class="media m-sm-1 col-sm-5 m-md-3">
+                <img src="@picture.ImageUrl" width="250" class="mr-5">
+                <div class="media-body">
+                    <p>@picture.Description</p>
+                </div>
+            </div>
+        }
+    </div>
+</div>

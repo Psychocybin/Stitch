@@ -1,7 +1,7 @@
 ﻿namespace PletkaRedka.Web.ViewModels.Galleries
 {
     using System;
-
+    using System.ComponentModel.DataAnnotations;
     using PletkaRedka.Data.Models;
     using PletkaRedka.Services.Mapping;
 
@@ -9,8 +9,10 @@
     {
         public string UserId { get; set; }
 
+        [Required]
         public string ImageUrl { get; set; }
 
+        [Required]
         public string Description { get; set; }
 
         public DateTime CreatedOn { get; set; }
