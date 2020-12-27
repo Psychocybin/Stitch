@@ -15,6 +15,8 @@
         public string UserUserName { get; set; }
 
         [Required]
+        [MinLength(10)]
+        [MaxLength(1000)]
         public string Content { get; set; }
 
         public DateTime CreatedOn { get; set; }

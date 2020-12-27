@@ -13,6 +13,8 @@
         public string ImageUrl { get; set; }
 
         [Required]
+        [MinLength(10)]
+        [MaxLength(200)]
         public string Description { get; set; }
 
         public DateTime CreatedOn { get; set; }

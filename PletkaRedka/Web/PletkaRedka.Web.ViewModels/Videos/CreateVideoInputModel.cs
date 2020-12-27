@@ -1,23 +1,27 @@
-﻿namespace PletkaRedka.Web.ViewModels.Posts
+﻿namespace PletkaRedka.Web.ViewModels.Videos
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
+    using PletkaRedka.Data.Models;
+    using PletkaRedka.Services.Mapping;
     using PletkaRedka.Web.ViewModels.Categories;
 
-    public class PostCreateInputModel
+    public class CreateVideoInputModel
     {
         [Required]
         [MinLength(3)]
-        [MaxLength(50)]
+        [MaxLength(20)]
         public string Name { get; set; }
 
         [Required]
         [MinLength(10)]
-        [MaxLength(2000)]
-        public string Content { get; set; }
+        [MaxLength(500)]
+        public string Description { get; set; }
 
-        [Display(Name = "Категория")]
+        [Required]
+        public string VideoUrl { get; set; }
+
         public int CategoryId { get; set; }
 
         public IEnumerable<CategoryDropDownViewModel> Categories { get; set; }

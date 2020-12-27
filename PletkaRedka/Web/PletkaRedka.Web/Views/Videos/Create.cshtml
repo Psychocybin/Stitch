@@ -1,6 +1,6 @@
-﻿@model PletkaRedka.Web.ViewModels.Posts.PostCreateInputModel
-@{ 
-    this.ViewData["Title"] = "Създай нова тема";
+﻿@model PletkaRedka.Web.ViewModels.Videos.CreateVideoInputModel
+@{
+    this.ViewData["Title"] = "Добави видео";
 }
 
 <div class="media-body col-9 mb-4">
@@ -14,9 +14,14 @@
         <span asp-validation-for="Name" class="text-danger">Полето е задължително!</span>
     </div>
     <div class="media-body col-9 mb-2">
-        <label asp-for="Content">Съдържание</label>
-        <textarea asp-for="Content" class="form-control border-info" rows="6"></textarea>
-        <span asp-validation-for="Content" class="text-danger">Полето е задължително!</span>
+        <label asp-for="Description">Описание</label>
+        <textarea asp-for="Description" class="form-control border-info" rows="6"></textarea>
+        <span asp-validation-for="Description" class="text-danger">Полето е задължително!</span>
+    </div>
+    <div class="media-body col-9 mb-2">
+        <label asp-for="VideoUrl">Копирай линк от YouTube.com тук</label>
+        <input asp-for="VideoUrl" class="form-control border-info" />
+        <span asp-validation-for="VideoUrl" class="text-danger">Полето е задължително!</span>
     </div>
     <div class="media-body col-9 mb-2">
         <label asp-for="CategoryId"></label>
