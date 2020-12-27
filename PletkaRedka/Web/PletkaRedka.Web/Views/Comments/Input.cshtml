@@ -3,7 +3,9 @@
     this.ViewData["Title"] = "Добави коментар";
 }
 
-<div class="col-9">
+<h2 class="text-center mt-1">@this.ViewData["Title"]</h2>
+
+<div class="col-9 mt-3">
     <form asp-controller="Comments" asp-action="Create" method="post">
         <input type="hidden" name="PostId" value="@this.Model.PostId" />
         <div class="media-body col-9 mb-2">

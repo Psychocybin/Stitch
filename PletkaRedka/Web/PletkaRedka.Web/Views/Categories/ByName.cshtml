@@ -3,13 +3,11 @@
     this.ViewData["Title"] = Model.Name;
 }
 
-<h3 class="display-4 text-md-center">@Model.Name</h3>
-<br />
-<div class="text-secondary text-lg-center">
+<h3 class="display-4 text-md-center mt-1 mb-2">@Model.Name</h3>
+
+<div class="text-secondary text-lg-center mb-3">
     @Model.Description
 </div>
-<br />
-<br />
 
 @foreach (var post in Model.ForumPosts)
 {
