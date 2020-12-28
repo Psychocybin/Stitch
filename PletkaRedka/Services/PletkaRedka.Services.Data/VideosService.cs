@@ -42,6 +42,13 @@
             return query.To<T>().ToList();
         }
 
+        public IEnumerable<T> GetById<T>(int categoryId)
+        {
+            IQueryable<Video> query = this.videoRepository.All()
+                .Where(x => x.CategoryId == categoryId).OrderByDescending(x => x.Id);
+            return query.To<T>().ToList();
+        }
+
         private static string MakeYoutubeVideo(string videoInput)
         {
             var sb = new StringBuilder();

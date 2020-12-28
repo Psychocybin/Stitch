@@ -60,5 +60,28 @@
 
             return this.View(viewModel);
         }
+
+        public IActionResult SelectCategoryForm()
+        {
+            var categories = this.categoriesService.GetAll<CategoryDropDownViewModel>();
+            var viewModel = new SelectCategoryViewModel
+            {
+                Categories = categories,
+            };
+
+            return this.View(viewModel);
+        }
+
+        public IActionResult ById(SelectCategoryViewModel input)
+        {
+            var categoryId = input.CategoryId;
+
+            var viewModel = new ShowAllVideos
+            {
+                Videos = this.videosService.GetById<VideoViewModel>(categoryId),
+            };
+
+            return this.View(viewModel);
+        }
     }
 }

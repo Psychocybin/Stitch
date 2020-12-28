@@ -53,6 +53,7 @@
             return this.View(viewModel);
         }
 
+        [Authorize]
         public IActionResult ShowMyPictures()
         {
             var userId = this.userManager.GetUserId(this.User);

@@ -8,5 +8,7 @@
         Task<int> AddVideoAsync(string name, string description, string videoUrl, int categoryId);
 
         IEnumerable<T> GetAll<T>();
+
+        IEnumerable<T> GetById<T>(int categoryId);
     }
 }

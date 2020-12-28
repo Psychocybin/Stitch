@@ -28,8 +28,7 @@
         <select asp-for="CategoryId" asp-items="Model.Categories.Select(x => new SelectListItem(x.Name, x.Id.ToString()))" class="form-control border-info"></select>
         <span asp-validation-for="CategoryId" class="text-danger">Полето е задължително!</span>
     </div>
-    <br />
-    <div class="media-body col-9">
-        <input type="submit" class="btn btn-primary" />
+    <div class="media-body col-9 mt-3">
+        <input type="submit" class="btn btn-primary" value="Потвърди" />
     </div>
 </form>
