@@ -22,6 +22,7 @@
         [Required]
         public string VideoUrl { get; set; }
 
+        [Display(Name = "Категория")]
         public int CategoryId { get; set; }
 
         public IEnumerable<CategoryDropDownViewModel> Categories { get; set; }

@@ -1,12 +1,14 @@
-﻿using PletkaRedka.Data.Common.Repositories;
-using PletkaRedka.Data.Models;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PletkaRedka.Services.Data
+﻿namespace PletkaRedka.Services.Data
 {
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    using PletkaRedka.Data.Common.Repositories;
+    using PletkaRedka.Data.Models;
+    using PletkaRedka.Services.Mapping;
+
     public class VideosService : IVideosService
     {
         private readonly IDeletableEntityRepository<Video> videoRepository;
@@ -32,6 +34,12 @@ namespace PletkaRedka.Services.Data
             await this.videoRepository.SaveChangesAsync();
 
             return video.Id;
+        }
+
+        public IEnumerable<T> GetAll<T>()
+        {
+            IQueryable<Video> query = this.videoRepository.All().OrderByDescending(x => x.Id);
+            return query.To<T>().ToList();
         }
 
         private static string MakeYoutubeVideo(string videoInput)

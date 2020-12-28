@@ -50,5 +50,15 @@
 
             return this.RedirectToAction("ShowGalleries", "Galleries");
         }
+
+        public IActionResult ShowAllVideos()
+        {
+            var viewModel = new ShowAllVideos
+            {
+                Videos = this.videosService.GetAll<VideoViewModel>(),
+            };
+
+            return this.View(viewModel);
+        }
     }
 }
