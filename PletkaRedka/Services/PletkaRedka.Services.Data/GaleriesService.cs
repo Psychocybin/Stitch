@@ -40,5 +40,12 @@
             IQueryable<Gallery> query = this.repository.All().OrderByDescending(x => x.Id);
             return query.To<T>().ToList();
         }
+
+        public IEnumerable<T> GetMyPictures<T>(string id)
+        {
+            IQueryable<Gallery> query = this.repository.All()
+                .Where(x => x.UserId == id).OrderByDescending(x => x.Id);
+            return query.To<T>().ToList();
+        }
     }
 }

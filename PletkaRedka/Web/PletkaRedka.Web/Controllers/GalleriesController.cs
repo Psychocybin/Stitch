@@ -52,5 +52,17 @@
             };
             return this.View(viewModel);
         }
+
+        public IActionResult ShowMyPictures()
+        {
+            var userId = this.userManager.GetUserId(this.User);
+
+            var viewModel = new ShowMyPicturesViewModel()
+            {
+                Galleries = this.galeriesService.GetMyPictures<GetAllPicturesViewModel>(userId),
+            };
+
+            return this.View(viewModel);
+        }
     }
 }

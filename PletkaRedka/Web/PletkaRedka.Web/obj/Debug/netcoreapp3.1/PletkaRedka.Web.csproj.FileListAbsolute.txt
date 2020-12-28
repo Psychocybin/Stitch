@@ -490,3 +490,4 @@ C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreap
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreapp3.1\Razor\Views\Videos\Create.cshtml.g.cs
 C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreapp3.1\Razor\Views\Videos\ShowAllVideos.cshtml.g.cs
+C:\Users\user\Desktop\Stitch\PletkaRedka\Web\PletkaRedka.Web\obj\Debug\netcoreapp3.1\Razor\Views\Galleries\ShowMyPictures.cshtml.g.cs
